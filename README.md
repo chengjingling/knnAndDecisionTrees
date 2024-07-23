@@ -5,6 +5,10 @@
 This project aims to apply and evaluate two machine learning algorithms, kNN and Decision Trees, on the Iris dataset. The performance of both algorithms is assessed in terms of
 accuracy, providing insights into their effectiveness in classifying Iris flowers.
 
+## Data Preparation
+
+The Iris dataset, loaded using the `datasets` module from `scikit-learn`, contains measurements of sepal length, sepal width, petal length, and petal width for three species of Iris flowers. The dataset is divided into features (`X`) and labels (`y`), representing the input data and corresponding species, respectively. The dataset is split into training and testing sets using the `train_test_split` function from `scikit-learn`. This ensures that the models are trained on a subset of the data and evaluated on a separate, unseen subset.
+
 ## kNN Algorithm
 
 A kNN algorithm classifies a data point by considering the majority class among its k-nearest neighbours. Euclidean distance is often used to measure similarity.
@@ -19,7 +23,7 @@ This Decision Trees algorithm is employed using the `scikit-learn` library. The 
 
 ## Results
 
-The accuracy scores of the kNN and Decision Trees algorithms are calculated using the `accuracy_score` function from the sklearn.metrics module. The program was run 10 times with 10 different sets of data, and the results are shown below.
+The accuracy scores of the kNN and Decision Trees algorithms are calculated using the `accuracy_score` function from the `sklearn.metrics` module. The program was run 10 times with 10 different sets of data, and the results are shown below.
 
 | **Test**    | **kNN Accuracy** | **Decision Trees Accuracy** |
 | ----------- | ---------------- | --------------------------- |
